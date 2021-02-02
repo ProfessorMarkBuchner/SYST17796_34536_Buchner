@@ -16,7 +16,8 @@ public class StudentList {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Student[] students = new Student[2];
+        Student[] students = new Student[3];
+        // change array seize
     
 
         for (int i = 0; i < students.length; i++) {
