@@ -1,5 +1,5 @@
 /*
- * This class is a simple example of creating an array of objects
+ * This class is a simple example of creating an array of objects and I added another comments
  */
 package studentlist;
 import java.util.Scanner;
