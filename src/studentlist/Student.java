@@ -7,7 +7,7 @@ package studentlist;
 
 /**
  *This class represents students in our application
- * @author zaman
+ * @author zaman February 2 ,2021
  */
 public class Student {
     private String name;
