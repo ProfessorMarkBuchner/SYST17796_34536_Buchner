@@ -18,8 +18,7 @@ public class StudentList {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Changed array size to 3
-        Student[] students = new Student[3];
+        Student[] students = new Student[2];
         
         Scanner input = new Scanner(System.in);
         
