@@ -1,62 +1,52 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ice1;
+import java.util.Scanner;
+import java.util.Arrays;
 
-/**
- *
- * @author nooranazpatel
- */
-/**
- * A class that models playing card Objects. Cards have 
- * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
- * A suit (clubs, hearts, spades, diamonds).
- * There are 52 cards in a deck, no jokers.
- * This code is to be used in ICE1. When you create your own branch,
- * add your name as a modifier.
- * @author dancye
- */
-public class Card {
+public class Card 
+{
+  private String suits;//diamonds,clubs,spades, hearts
+  private int value; // 1 to 13
+public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
+ public static final String[] ranks={null, "ACE","2","3,","4","5","6","7","8,","9","10","JACK","QUEEN","KING"};
+ 
+ 
 
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
-
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    /**
-     * @return the suit
-     */
-    public String getSuit() {
-        return suit;
+    public static void main(String[] args) {
+        
     }
 
-    /**
-     * @param suit the suit to set
-     */
-    public void setSuit(String suit) {
-        this.suit = suit;
+
+ 
+
+    
+    public String getSuits() {
+        return suits;
+        
     }
 
-    /**
-     * @return the value
-     */
+    
+    public void setSuits(String suits) {
+       
+       this.suits = suits; 
+     
+    }
+    
     public int getValue() {
         return value;
     }
 
-    /**
-     * @param value the value to set
-     */
+    
     public void setValue(int value) {
         this.value = value;
     }
-   private boolean getvalue(){
-       return false;
-   }
-   
-    private Object getSuits(){
-        throw new UnsupportedOperationException("Not supported yet."); 
-    }
+    
+public int randomValue()
+{
+    int value=0;
+           return value;
 }
+}
+
+
+
 
