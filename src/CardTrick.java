@@ -17,6 +17,10 @@ public class CardTrick {
         Scanner input = new Scanner(System.in);
         Random numGen = new Random();
         Card[] magicHand = new Card[7];
+        
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Hearts");
+        luckyCard.setValue(10);
 
         boolean found = false;
         while (!found) {
@@ -51,6 +55,11 @@ public class CardTrick {
                     System.out.println("You won!");
                     found = true;
                 }
+                //if(luckyCard.getSuit() == suit && luckyCard.getValue() == value){
+                  //  System.out.println("You got the Lucky Card!");
+                //} else {
+                  //  System.out.println("Sorry, you lose");
+                //}
             }
             if (!found) {
                 System.out.println("Sorry you lost!");
