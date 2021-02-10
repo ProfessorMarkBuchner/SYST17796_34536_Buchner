@@ -18,7 +18,7 @@ public class CardTrick {
       
       for (int i = 0; i< magicHand.length; i++) {
         Card s = new Card();
-        int random = ((int)(Math.random()*13 +1);
+        int random = ((int)(Math.random()*13) +1);
         s.setValue(random);
         int randomSuit=(int) (Math.random()*3);
         s.setSuit (Card.SUITS[randomSuit]);
@@ -26,9 +26,9 @@ public class CardTrick {
       }
       Scanner s = new Scanner (System.in);
       System.out.println(" Pick a card");
-      value = next();
+      value = s.nextInt();
       System.out.println("Pick a Suit");
-      String suit = s.nextInt();
+      String suit = s.next();
       Card Win= new Card ();
       Win.setValue (4);
       Win.setSuit ("Hearts");
@@ -42,7 +42,6 @@ public class CardTrick {
             result = false;
             System.out.println("Try again");
         }
-          }
+     }
       
     }
-}
