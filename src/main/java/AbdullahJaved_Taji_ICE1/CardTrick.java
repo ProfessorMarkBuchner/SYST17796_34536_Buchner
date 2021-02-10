@@ -21,12 +21,10 @@ public class CardTrick {
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
 
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+
             c.setValue(rand.nextInt(13) + 1);
             c.setSuit(Card.SUITS[(rand.nextInt(4))]);
             magicHand[i] = c;
-//            System.out.println(c.toString());
         }
         
         Card luckyCard = new Card();
@@ -48,33 +46,5 @@ public class CardTrick {
         } else {
             System.out.println("You lose!!");
         }
-
-//         Card playerCard = new Card();
-
-//         System.out.println("Enter any card value");
-//         int playerCardVal = input.nextInt();
-
-//         playerCard.setValue(playerCardVal);
-
-//         System.out.println("Enter any card suite");
-//         playerCard.setSuit(input.next());
-
-
-//         boolean result = false;
-
-//         for (int i = 0; i < magicHand.length; i++) {
-//             if (playerCard.getValue() == magicHand[i].getValue() && playerCard.getSuit().equals(magicHand[i].getSuit())) {
-//                 result = true;
-//                 break;
-//             } else {
-//                 result = false;
-//             }
-//         }
-
-//         if (result == true) {
-//             System.out.println("Your card is present in the Magic Hand.");
-//         } else {
-//             System.out.println("Your card is not present in the Magic Hand.");
-//         }
     }
 }
