@@ -28,33 +28,53 @@ public class CardTrick {
             magicHand[i] = c;
 //            System.out.println(c.toString());
         }
-
-        Card playerCard = new Card();
-
-        System.out.println("Enter any card value");
-        int playerCardVal = input.nextInt();
-
-        playerCard.setValue(playerCardVal);
-
-        System.out.println("Enter any card suite");
-        playerCard.setSuit(input.next());
-
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(1);
+        luckyCard.setSuit("Clubs");
 
         boolean result = false;
 
         for (int i = 0; i < magicHand.length; i++) {
-            if (playerCard.getValue() == magicHand[i].getValue() && playerCard.getSuit().equals(magicHand[i].getSuit())) {
+            if (luckyCard.getValue() == magicHand[i].getValue() && luckyCard.getSuit().equals(magicHand[i].getSuit())) {
                 result = true;
                 break;
             } else {
                 result = false;
             }
         }
-
-        if (result == true) {
-            System.out.println("Your card is present in the Magic Hand.");
+                if (result == true) {
+            System.out.println("Congrats. You win!!");
         } else {
-            System.out.println("Your card is not present in the Magic Hand.");
+            System.out.println("You lose!!");
         }
+
+//         Card playerCard = new Card();
+
+//         System.out.println("Enter any card value");
+//         int playerCardVal = input.nextInt();
+
+//         playerCard.setValue(playerCardVal);
+
+//         System.out.println("Enter any card suite");
+//         playerCard.setSuit(input.next());
+
+
+//         boolean result = false;
+
+//         for (int i = 0; i < magicHand.length; i++) {
+//             if (playerCard.getValue() == magicHand[i].getValue() && playerCard.getSuit().equals(magicHand[i].getSuit())) {
+//                 result = true;
+//                 break;
+//             } else {
+//                 result = false;
+//             }
+//         }
+
+//         if (result == true) {
+//             System.out.println("Your card is present in the Magic Hand.");
+//         } else {
+//             System.out.println("Your card is not present in the Magic Hand.");
+//         }
     }
 }
