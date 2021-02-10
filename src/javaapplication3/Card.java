@@ -1,5 +1,12 @@
 
 package javaapplication3;
+
+
+
+/**
+     modifier Het Patel
+ */
+
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
