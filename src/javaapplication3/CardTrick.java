@@ -25,21 +25,23 @@ public class CardTrick {
         magicHand[i] = s;
       }
       Scanner s = new Scanner (System.in);
-      System.out.println("card");
+      System.out.println(" Pick a card");
       value = next();
-      System.out.println("Suit");
-      String suit = s.next();
+      System.out.println("Pick a Suit");
+      String suit = s.nextInt();
       Card Win= new Card ();
       Win.setValue (4);
       Win.setSuit ("Hearts");
       boolean result = true;
       
-      for (Card magic : magicHand)
-      {
-          if (magic.getValue() == Win.getValue() & magic.equals(Win.getSuit()))result = false;
-          {
-              result = true;
-              break;
+      if (suit == Win.getSuit() && value == Win.getValue()) {
+            result = true;
+            System.out.println("You win");
+
+        } else {
+            result = false;
+            System.out.println("Try again");
+        }
           }
       
     }
