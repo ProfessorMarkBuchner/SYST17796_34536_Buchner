@@ -5,6 +5,8 @@
  */
 package card_trick;
 
+import java.util.Scanner;
+
 /**
  *
  * @author manmohitsingh
