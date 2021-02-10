@@ -17,17 +17,17 @@ public class CardTrick {
        Card[] magicHand = new Card[7];
       
       for (int i = 0; i< magicHand.length; i++) {
-        Card c = new Card();
-        int random = ((int)(Math.random()*13) +1);
-        c.setValue(random);
+        Card s = new Card();
+        int random = ((int)(Math.random()*13 +1);
+        s.setValue(random);
         int randomSuit=(int) (Math.random()*3);
-        c.setSuit (Card.SUITS[randomSuit]);
-        magicHand[i] = c;
+        s.setSuit (Card.SUITS[randomSuit]);
+        magicHand[i] = s;
       }
       Scanner s = new Scanner (System.in);
-      System.out.println("pick a card");
-      value = s.nextInt();
-      System.out.println("pick a Suit");
+      System.out.println("card");
+      value = next();
+      System.out.println("Suit");
       String suit = s.next();
       Card Win= new Card ();
       Win.setValue (4);
@@ -41,12 +41,6 @@ public class CardTrick {
               result = true;
               break;
           }
-      }
-      if (result){
-          System.out.println("you win");
-      }
-      else{
-          System.out.println("Do again");
-      }
+      
     }
 }
