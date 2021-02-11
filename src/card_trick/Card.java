@@ -14,7 +14,7 @@ public class Card {
    private int value;//1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    public static final String[] = {null, "KING", "QUEEN", "JACK", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "ACE"};
+    public static final String[] LUCKYCARD= {null, "KING", "QUEEN", "JACK", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "ACE"};
     /**
      * @return the suit
      */
