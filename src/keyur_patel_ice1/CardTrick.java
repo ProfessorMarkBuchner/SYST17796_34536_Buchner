@@ -39,11 +39,13 @@ public class CardTrick {
 
         if (suit == Win.getSuit() && value == Win.getValue()) {
             result = true;
-            System.out.println("Congratulation! YOU WIN");
+            System.out.println("Congratulation!");
+            System.out.println(" YOU WIN this game");
 
         } else {
             result = false;
-            System.out.println("Sorry! TRY AGAIN");
+            System.out.println("Sorry!");
+            System.out.println("TRY AGAIN Later");
         }
     }
 
