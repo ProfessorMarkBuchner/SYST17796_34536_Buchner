@@ -40,7 +40,7 @@ public class CardTrick {
         if (suit == Win.getSuit() && value == Win.getValue()) {
             result = true;
             System.out.println("YOU WIN");
-
+            System.out.println("Congratulations");
         } else {
             result = false;
             System.out.println("DO IT AGAIN");
