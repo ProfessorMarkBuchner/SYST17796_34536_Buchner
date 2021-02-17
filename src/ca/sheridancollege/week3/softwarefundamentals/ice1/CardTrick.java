@@ -27,11 +27,8 @@ public class CardTrick {
             magicHand[i] = c; 
         }
         //insert code to ask the user for Card value and suit, create their card
-        Scanner k = new Scanner(System.in);
-        System.out.print("Please enter your card value:");
-        int cardValue = k.nextInt();
-        System.out.print("Please enter your suit:");
-        String suit = k.next();
+        int cardValue = 9;
+        String suit = "Hearts";
         // and search magicHand here
         boolean doesItMatch = false;
         for(int i = 0; i<magicHand.length; i++)
